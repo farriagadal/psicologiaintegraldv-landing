@@ -8,7 +8,7 @@ const Footer = () => {
     <Container>
       {/* <img src="/footer.svg" alt="footer" /> */}
       <Text>
-        <p>Fluai.io © Versión Beta 0.1 - {t('copyright')} { new Date().getFullYear() }</p>
+        <p><b>PSICOLOGIAINTEGRALDV.CL</b>© {t('copyright')} { new Date().getFullYear() }</p>
       </Text>
     </Container>
 

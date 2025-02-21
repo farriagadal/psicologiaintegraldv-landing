@@ -13,7 +13,7 @@ export const Button = styled.button<ButtonProps>`
   align-items: center;
   /* background: var(--color-1); */
   border-radius: 8px;
-  border: none;
+  border: 1px white solid;
   color: rgb(255, 255, 255);
   font-weight: 900;
   font-size: 17px;
@@ -24,7 +24,7 @@ export const Button = styled.button<ButtonProps>`
   cursor: pointer;
   transition: filter 0.2s;
   opacity: ${props => props.disabled ? '0.7' : '1'};
-  background: linear-gradient(134.06deg, #27248C 22.76%, #4F1F66 97.51%);
+  background: linear-gradient(134.06deg, #5a7577 22.76%, #716448 97.51%);
   text-transform: uppercase;
 
   &:hover {
@@ -38,5 +38,9 @@ export const Button = styled.button<ButtonProps>`
   img {
     margin-left: 8px;
     height: 20px
+  }
+
+  span {
+    color: rgb(255, 255, 255);
   }
 `

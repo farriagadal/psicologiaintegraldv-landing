@@ -1,21 +1,11 @@
 import styled from 'styled-components'
 
+
 export const Container = styled.div`
-  max-width: var(--container-width);
+  width: var(--container-width);
   margin: auto;
-  margin-top: 150px;
-  color: white;
-  padding: 0px 0 30px 0;
-  transition: all 0.4s linear;
-  /* overflow: hidden; */
-
-  @media only screen and (max-width: 1250px) {
-    padding: 50px 0px;
-    margin-top: 70px;
-    opacity: 1;
-    transform: translateY(0px);
-  }
-
+  margin-top: 100px;
+  padding-bottom: 100px;
 
   &>label {
     font-family: 'Nunito';
@@ -34,7 +24,7 @@ export const Container = styled.div`
 
     &:after {
       content: '';
-      left: calc(50vw + 40px);
+      left: calc(50vw + 120px);
       width: calc(50vw - 50px);
       border-bottom: solid 1px;
       margin-top: 10px;
@@ -55,7 +45,7 @@ export const Container = styled.div`
     line-height: 100%;
     text-align: center;
     letter-spacing: 0.04em;
-    max-width: 600px;
+    max-width: 700px;
     margin: 34px auto 70px auto;
 
     @media only screen and (max-width: 1250px) {
@@ -74,4 +64,22 @@ export const Container = styled.div`
       margin-bottom: 40px;
     } 
   }
+`
+
+export const PhotoBox = styled.div`
+  display: grid;
+`
+
+export const ImgBox = styled.div`
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+`
+
+export const Row = styled.div`
+  display: flex;
+  gap: 40px;
+  justify-content: center;
 `

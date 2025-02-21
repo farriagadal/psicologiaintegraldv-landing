@@ -12,17 +12,6 @@ export const Container = styled.div`
     margin: 100px auto 100px auto;
   }
 
-
-  label {
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: white;
-    margin-bottom: 10px;
-    display: block;
-  }
-
   img {
     object-fit: cover;
 
@@ -47,16 +36,29 @@ export const Container = styled.div`
     z-index: 1;
   }
 
-
 `
+export const BackButton = styled.div`
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+`
+
 export const Text = styled.div`
   position: relative;
   padding-right: 50px;
   z-index: 11;
   width: var(--container-width);
   margin: auto;
-  height: 700px;
+  height: 400px;
   place-content: center;
+  text-align: center;
+  justify-items: center;
 
   @media only screen and (max-width: 1250px) {
     width: 100%;
@@ -72,8 +74,6 @@ export const Text = styled.div`
   h1 {
     margin: 0;
     color: #fff;
-    max-width: 500px;
-
 
     @media only screen and (max-width: 1250px) {
       font-size: 40px;
@@ -82,11 +82,11 @@ export const Text = styled.div`
 
   p {
     color: #e6e6e6;
-    max-width: 600px;
+    max-width: 700px;
     font-weight: 100;
     font-family: 'Nunito';
     font-size: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     letter-spacing: 0.8px;
 
     @media only screen and (max-width: 1250px) {

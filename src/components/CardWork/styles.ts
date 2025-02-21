@@ -12,12 +12,12 @@ export const Container = styled.div<ContainerProps>`
   border-radius: 20px;
   /* animation: float 3s infinite; */
   /* animation-delay: ${props => props.delay ? props.delay + 's' : '0s'}; */
-  border: 1px solid transparent;
+  border: 1px solid #5a7577;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    border-color: var(--color-2);
+    border-color:rgb(146, 199, 202);
   }
 
   @keyframes float {
@@ -45,8 +45,11 @@ export const Container = styled.div<ContainerProps>`
     color: var(--black);
     &::after {
       content: '.';
-      color: var(--color-2);
+      color: var(--color-8);
     }
+  }
+  button {
+    justify-self: center;
   }
 `
 
@@ -63,7 +66,7 @@ export const IconContainer = styled.div`
   }
 
   svg, path{
-    fill: var(--color-2);
+    fill: #5a7577;
   }
 `
 

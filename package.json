@@ -25,7 +25,8 @@
     "react-i18next": "^12.2.0",
     "sanitize-html": "^2.10.0",
     "sass": "^1.62.1",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "@splidejs/react-splide": "^0.7.12"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.5.1",

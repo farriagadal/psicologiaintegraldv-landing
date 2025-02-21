@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
-import i18n from 'i18next'
+import Dropdown from '../Dropdown'
 
 type NavDesktopProps = {
   routes: {
@@ -31,18 +31,28 @@ const NavDesktop = ({ routes, langs }: NavDesktopProps) => {
     observer.observe(document.querySelector('#NavDesktopindicator'))
   }, [])
 
+  const menuOptions = [
+    { label: 'Psicología Adulto', href: '/servicios/psicologia-adulto' },
+    { label: 'Psicología Infanto-Juvenil', href: '/servicios/psicologia-infanto-juvenil' },
+    { label: 'Terapia de Parejas', href: '/servicios/terapia-de-parejas' },
+    { label: 'Talleres Grupales y Charlas', href: '/servicios/talleres-grupales-y-charlas' },
+    { label: 'Terapia de familias', href: '/servicios/terapia-de-familias' }
+  ];
+
   return (
     <>
       <div id="NavDesktopindicator" />
       <Container isTop={isTop}>
         <nav>
           <Logo href="/">
-            <Image className='full-logo' src='/icons/logo.svg' alt="Logo" width={200} height={100} />
-            <Image className='short-logo' src='/icons/short-logo.svg' alt="Logo" width={100} height={50} />
+            <Image className='full-logo' src='/images/logo-75-v4.png' alt="Logo" width={200} height={100} />
+            <Image className='short-logo' src='/images/logo-75-v4.png' alt="Logo" width={100} height={50} />
           </Logo>
           {
             routes.map((route, index) => (
-              <MenuOption key={index}>
+              route.href === '/servicios' 
+              ? <Dropdown title={route.name} options={menuOptions} />
+              : <MenuOption key={index}>
                 {
                   route.external && router.pathname === '/'
                     ? <a href={ route.href }>{ route.name }</a>
@@ -51,24 +61,12 @@ const NavDesktop = ({ routes, langs }: NavDesktopProps) => {
               </MenuOption>
             ))
           }
-          {
-            langs.map((lang: any, index) => (
-              <LangBtn
-                key={index}
-                onClick={() => {
-                  i18n.changeLanguage(lang.code)
-                }}
-              >
-                <img src={lang.src} alt={lang.code} />
-              </LangBtn>
-            ))
-          }
         </nav>
       </Container>
       <a href="https://app.fluai.io">
         <ContactBtn>
-          <Image src='/icons/contact-icon.svg' alt="Contact Icon" width={16} height={16} />
-          <span>{t('cta2')}</span>
+          <img src='/icons/whatsapp.svg' alt="Button Main" />
+          <span>Agenda una sessión</span>
         </ContactBtn>
       </a>
     </>

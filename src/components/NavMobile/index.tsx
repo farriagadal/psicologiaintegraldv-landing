@@ -56,8 +56,8 @@ const NavMobile = ({ routes }: NavMobileProps) => {
             </LangBtn>
             <a href="https://app.fluai.io">
               <ContactBtn>
-                <span>{t('cta2')}</span>
-                <Image src='/icons/contact-icon.svg' alt="Contact Icon" width={16} height={16} />
+              <span>Agenda una sessión</span>
+              <img src='/icons/whatsapp.svg' alt="Button Main" />
               </ContactBtn>
             </a>
 

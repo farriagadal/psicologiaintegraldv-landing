@@ -8,7 +8,7 @@ export const Container = styled.div<ContainerProps>`
   max-width: var(--container-width);
   margin: auto;
   color: white;
-  padding: 0px 0 120px 0;
+  padding: 0;
   opacity: ${(props) => (props.isActive ? '1' : '0')};
   transform: ${(props) => (props.isActive ? 'translateY(0px)' : 'translateY(-250px)')};
   transition: all 0.4s linear;
@@ -34,7 +34,7 @@ export const Container = styled.div<ContainerProps>`
     line-height: 25px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--color-2);
+    color: var(--color-8);
     text-align: center;
     display: block;
 
@@ -68,7 +68,7 @@ export const Container = styled.div<ContainerProps>`
 
     b {
       font-family: inherit;
-      color: var(--color-2);
+      color: var(--color-8);
     }
 
     @media only screen and (max-width: 1250px) {
@@ -77,7 +77,7 @@ export const Container = styled.div<ContainerProps>`
 
     &::after {
       content: '.';
-      color: var(--color-2);
+      color: var(--color-8);
     }
   }
 

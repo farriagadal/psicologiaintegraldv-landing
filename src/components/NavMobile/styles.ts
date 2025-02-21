@@ -12,8 +12,8 @@ export const Logo = styled(Link)`
 `
 
 export const MenuButton = styled.button`
-  border-top: 1px solid var(--color-2);
-  border-left: 1px solid var(--color-2);
+  border-top: 1px solid var(--color-8);
+  border-left: 1px solid var(--color-8);
   border-bottom: none;
   border-right: none;
   position: fixed;
@@ -43,7 +43,7 @@ export const MenuList = styled.div`
   display: grid;
   padding: 73px 30px 35px 40px;
   border-top-left-radius: 20px;
-  border: 1px solid var(--color-2);
+  border: 1px solid var(--color-8);
   animation: 0.2s slideleft linear;
   box-shadow: rgba(149,157,165,0.2) 0px 8px 24px;
 
@@ -81,13 +81,13 @@ export const CloseBtn = styled.div`
 `
 
 export const ContactBtn = styled.div`
-  border: 1px solid var(--color-2);
+  border: 1px solid var(--color-8);
   border-radius:8px;
   height: 61px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--color-2);
+  border: 1px solid var(--color-8);
   background: linear-gradient(134.06deg,#27248C 22.76%,#4F1F66 97.51%);
 
   span {
@@ -105,7 +105,7 @@ export const ContactBtn = styled.div`
   }
 
   &:hover {
-    background: var(--color-2);
+    background: var(--color-8);
     border-color: var(--color-1);
   }
 `

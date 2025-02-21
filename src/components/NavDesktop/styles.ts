@@ -58,15 +58,16 @@ export const Container = styled.div<ContainerProps>`
 
 /* 
   &:hover {
-    background: ${props => props.isTop ? 'var(--color-1)' : 'var(--color-2)'};
+    background: ${props => props.isTop ? 'var(--color-1)' : 'var(--color-8)'};
   } */
 `
 export const Logo = styled(Link)`
   margin-right: auto;
 
-  /* img {
-    width: 100px;
-  } */
+  img {
+    width: auto;
+    max-height: 70px;
+  }
 `
 
 export const MenuOption = styled.div`
@@ -79,11 +80,10 @@ export const MenuOption = styled.div`
 `
 
 export const ContactBtn = styled.div`
-  background: linear-gradient(134.06deg,#27248C 22.76%,#4F1F66 97.51%);
-  border: 1px solid var(--color-2);
+  background: linear-gradient(134.06deg, #5a7577 22.76%, #716448 97.51%);
   border-radius: 8px;
   padding: 0 30px;
-  height: 61px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,22 +92,21 @@ export const ContactBtn = styled.div`
   z-index: 1111;
   position: fixed;
   bottom: 30vh;
-  right: -40px;
+  right: -80px;
 
   img {
     filter: brightness(0) invert(1);
   }
 
   &:hover {
-    background: var(--color-2);
+    background: var(--color-8);
   }
 
   span {
     font-family: 'Poppins';
     font-weight: 500;
-    font-size: 12px;
+    font-size: 20px;
     line-height: 18px;
-    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--color-3);
   }

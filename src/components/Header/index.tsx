@@ -24,10 +24,11 @@ const Header = () => {
   }, [])
 
   const routes = [
-    { name: t('menu1'), href: '/' },
-    { name: t('menu2'), href: '/#howworks', external: true },
-    { name: t('menu3'), href: '/#version', external: true },
-    { name: t('menu4'), href: '/#faqs' , external: true }
+    { name: 'Inicio', href: '/' },
+    { name: 'Servicios', href: '/servicios', external: true },
+    { name: 'FAQs', href: '/#faqs', external: true },
+    { name: 'Misión/Visión', href: '/mision-vision', external: true },
+    { name: 'Profesionales', href: '/#profesionales' , external: true }
   ]
 
   const langs = [

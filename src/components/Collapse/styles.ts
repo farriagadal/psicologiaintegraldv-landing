@@ -3,16 +3,19 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   text-align: center;
-  background-color: #f3f8ff;
+  background-color: #5a7577;
   margin-bottom: 30px;
   border-radius: 20px;
   padding: 30px;
+
+  * {
+    color: #fff;
+  }
 
   label {
     display: block;
     cursor: pointer;
     width: 100%;
-
 
     @media only screen and (max-width: 1250px) {
       display: flex;
@@ -56,7 +59,7 @@ export const Container = styled.div`
       padding: 30px 0px;
       font-size: 20px;
       line-height: 1.3;
-      color: var(--color-4);
+      
     }
 
 
