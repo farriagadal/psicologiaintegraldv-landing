@@ -1,4 +1,4 @@
-import { Container, Text, BackButton } from './styles'
+import { Container, Text, BackButton, BgImg } from './styles'
 import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
 import { Button } from 'src/styled-components/Button'
@@ -8,10 +8,11 @@ import { CONSTANTS } from 'src/utils/constants'
 import { useRouter } from 'next/router'
 
 type MiniHeaderProps = {
-  title: string
+  title: string,
+  imgUrl?: string,
 }
 
-const MiniHeader = ({ title }: MiniHeaderProps) => {
+const MiniHeader = ({ title, imgUrl='/images/bg.jpg' }: MiniHeaderProps) => {
   const { t } = useTranslation()
   const [imageId, setImageId] = useState(0)
   const router = useRouter()
@@ -19,7 +20,7 @@ const MiniHeader = ({ title }: MiniHeaderProps) => {
   return (
     <>
       <Container>
-        <Image src='/images/bg.jpg' alt="Seedlab Fondo" fill />
+        <BgImg src={imgUrl} alt="Centro Psicológico Fondo" />
         <Text>
           <BackButton onClick={() => router.push('/')}><img src='/icons/back-arrow.svg' /> Volver
           </BackButton>

@@ -141,7 +141,7 @@ export const Overlay = styled.div<{ isOpen: boolean }>`
 // Contenedor del contenido del modal con transición de escala o translate
 export const ModalContainer = styled.div<{ isOpen: boolean }>`
   background-color: #fff;
-  padding: 2rem;
+  padding: 50px;
   border-radius: 8px;
   max-width: 600px;
   width: 90%;

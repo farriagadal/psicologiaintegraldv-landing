@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const Container = styled.div`
   color: white;
@@ -125,4 +125,28 @@ export const ArrowDown = styled.a`
       transform: translateY(0px);
     }
   }
+`
+
+const progressAnimation = keyframes`
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+`
+
+export const ProgressBarContainer = styled.div`
+  width: 200px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  margin: 20px 0;
+  overflow: hidden;
+`
+
+export const ProgressBar = styled.div`
+  height: 100%;
+  background: white;
+  animation: ${progressAnimation} 5s linear;
 `

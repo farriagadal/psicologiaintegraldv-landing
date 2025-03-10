@@ -27,7 +27,7 @@ const Header = () => {
     { name: 'Inicio', href: '/' },
     { name: 'Servicios', href: '/servicios', external: true },
     { name: 'FAQs', href: '/preguntas-frecuentes', external: true },
-    { name: 'Misión/Visión', href: '/mision-vision', external: true },
+    { name: 'Sobre Nosotros', href: '/mision-vision', external: true },
     { name: 'Profesionales', href: '/#profesionales' , external: true }
   ]
 

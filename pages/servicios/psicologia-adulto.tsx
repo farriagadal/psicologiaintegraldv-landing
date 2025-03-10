@@ -9,6 +9,7 @@ export default function ServicePage() {
       {/* <Heading /> */}
       <MiniHeader
         title='Psicología Adulto'
+        imgUrl='/images/bg-1.jpg'
       />
       <Content>
       <p className='resume'>En el Centro integral del vínculo entendemos que iniciar un proceso psicológico es una decisión importante , es por eso que estamos enfocados en atender las necesidades de cada paciente apegados a una estructura ética que asegure la confidencialidad, resguardando tanto los datos del paciente como también la historia a través del relato.</p>

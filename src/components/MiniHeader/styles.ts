@@ -5,21 +5,11 @@ export const Container = styled.div`
   display: flex;
   position: relative;
   margin: 60px auto 60px auto;
-
+  overflow: hidden;
 
   @media only screen and (max-width: 1250px) {
     flex-direction: column;
     margin: 100px auto 100px auto;
-  }
-
-  img {
-    object-fit: cover;
-
-    @media only screen and (max-width: 1250px) {
-      position: absolute;
-      transform: scale(1.3);
-      opacity: 0.1;
-    }
   }
 
   &:after {
@@ -125,4 +115,12 @@ export const ArrowDown = styled.a`
       transform: translateY(0px);
     }
   }
+`
+
+export const BgImg = styled.img`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 `

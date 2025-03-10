@@ -7,6 +7,7 @@ export default function ServicePage() {
     <div>
       <MiniHeader
         title='Terapia de familias'
+        imgUrl='/images/bg-2.jpg'
       />
       <Content>
       <p style={{textAlign: 'center', marginBottom: 0}}>En nuestro enfoque como centro entendemos que la familia es el núcleo inicial de las interacciones humanas, es ahí donde se crean patrones de vinculación, se obtienen muchas de las primeras herramientas para la gestión emocional, a través de los padres se adquiere los patrones de apego y se gesta las primeras ideas de socialización.

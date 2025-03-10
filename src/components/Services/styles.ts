@@ -87,6 +87,21 @@ export const Container = styled.div<ContainerProps>`
       margin-bottom: 40px;
     } 
   }
+
+  .splide__pagination {
+    bottom: -50px;
+  }
+
+  .splide__pagination__page {
+    border-radius: 0;
+    width: 30px;
+    height: 5px;
+    margin: 4px;
+    &.is-active {
+      background-color: var(--color-8);
+      margin: 6px;
+    }
+  }
 `
 
 type ListProps = {

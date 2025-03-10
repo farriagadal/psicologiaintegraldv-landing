@@ -78,32 +78,46 @@ const HowWorks = () => {
         <label>Servicios</label>
         <h2>Nuestros Servicios</h2>
 
-        {/* Aquí creamos el slider de Splide */}
-        <Splide
-          options={{
-            type: 'loop',
-            pagination: false,
-            perPage: 3,
-            gap: '1rem',
-            autoplay: true,
-            breakpoints: {
-              768: {
-                perPage: 2
-              },
-              480: {
-                perPage: 1
+        <div style={{ position: 'relative' }}>
+          <div
+            style={{
+              position: 'absolute',
+              top: 0,
+              right: 0,
+              width: '150px',
+              height: '100%',
+              background: 'linear-gradient(to right, transparent, #f5f1e9)',
+              zIndex: 1,
+              pointerEvents: 'none'
+            }}
+          />
+          <Splide
+            options={{
+              type: 'loop',
+              pagination: true,
+              gap: '1rem',
+              autoplay: true,
+              fixedWidth: 350,
+              arrows: false,
+              breakpoints: {
+                768: {
+                  perPage: 2
+                },
+                480: {
+                  perPage: 1
+                }
               }
-            }
-          }}
-          aria-label="Nuestros Servicios"
-          style={{ marginBottom: '2rem' }}
-        >
-          {cards.map((card, index) => (
-            <SplideSlide key={index}>
-              <CardWork {...card} />
-            </SplideSlide>
-          ))}
-        </Splide>
+            }}
+            aria-label="Nuestros Servicios"
+            style={{ marginBottom: '2rem' }}
+          >
+            {cards.map((card, index) => (
+              <SplideSlide key={index}>
+                <CardWork {...card} />
+              </SplideSlide>
+            ))}
+          </Splide>
+        </div>
 
       </Container>
     </div>

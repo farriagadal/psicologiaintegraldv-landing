@@ -24,6 +24,57 @@ interface ProfessionalsProps {
   // Por ahora, no recibe ninguna
 }
 
+// Estilos adicionales para mejorar la apariencia
+const ProfessionalName = styled.h3`
+  font-size: 1.4rem;
+  margin: 1rem 0 0.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+  text-align: center;
+  line-height: 134%;
+`;
+
+const ProfessionalDescription = styled.div`
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  min-height: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const ModalTitle = styled.h2`
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+`;
+
+const ModalContent = styled.div`
+  p {
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+    color: #444;
+    font-size: 1.05rem;
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+`;
+
+const StyledButton = styled(Button)`
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+`;
 
 // ================== Modal Component ==================
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, professional }) => {
@@ -63,8 +114,10 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, professional }) => {
     <Overlay isOpen={isOpen} onClick={handleOverlayClick}>
       <ModalContainer isOpen={isOpen} onClick={handleModalContainerClick}>
         <CloseButton onClick={onClose}>✕</CloseButton>
-        <h2>Más información de {professional.name}</h2>
-        {professional.html}
+        <ModalTitle style={{marginBottom: 20}}>{professional.name}</ModalTitle>
+        <ModalContent>
+          {professional.html}
+        </ModalContent>
       </ModalContainer>
     </Overlay>
   )
@@ -77,13 +130,21 @@ const Professionals: React.FC<ProfessionalsProps> = () => {
     {
       id: 1,
       name: 'Mg. © Ps. Michel Reyes González',
-      image: '/images/michel.png',
+      image: '/images/michel.jpeg',
       shortDescription: <>
-        Fundador del centro psicológico integral, coordinador y supervisor del área clínica familiar.
+        Fundador del centro psicológico integral del vínculo.<br/>
+        Director general, coordinador y supervisor del área clínica familiar.
       </>,
       html: <>
-        Descripción completa de Michel:
-        experiencia, logros, estudios, especialidades y cualquier detalle extra que desees.
+        <p>Michel Reyes González, Licenciado en Psicología, Magíster © en Psicología clínica mención Sistémica, 
+        aprobado en su grado con máxima distinción, certificado en diferentes áreas de aplicación clínica, 
+        entre ellas en la administración de la Escala Wechsler de inteligencia en niños, quinta edición (WISC-V), 
+        primeros auxilios psicológicos y Terapia Breve.</p>
+        
+        <p>En la actualidad se encuentra centrado en la especialización terapia familiar, adolescente, 
+        adultos y terapia de parejas. En su trabajo con adultos, parejas y terapia familiar se destaca 
+        por el uso de técnicas de terapia sistémica familiar, terapia breve centrada en soluciones, 
+        narrativa y terapia estratégica.</p>
       </>
     },
     {
@@ -92,8 +153,14 @@ const Professionals: React.FC<ProfessionalsProps> = () => {
       image: '/images/javiera.jpg',
       shortDescription: <>Coordinadora y supervisora del área clínica infanto-juvenil.</>,
       html: <>
-      Información detallada de la experiencia y especialidades de Javiera,
-      su formación académica y otros datos importantes.
+        <p>Javiera Vásquez González, psicóloga clínica especializada en el tratamiento de niños, 
+        adolescentes y adultos. Como coordinadora y supervisora del área infanto-juvenil se destaca 
+        por el uso de técnicas de juego y terapia lúdica para fomentar el crecimiento emocional y cognitivo.</p>
+        
+        <p>Su trabajo en estrecha colaboración con los padres y cuidadores asegura el bienestar de todo 
+        el sistema familiar. En cuanto al enfoque con adultos, busca brindar un espacio de reflexión y 
+        crecimiento personal, facilitando la exploración de pensamientos, emociones y comportamientos 
+        de manera segura y confidencial.</p>
       </>
     }
     // Agrega más objetos si hay más profesionales
@@ -119,12 +186,15 @@ const Professionals: React.FC<ProfessionalsProps> = () => {
         {professionalsData.map((prof) => (
           <PhotoBox key={prof.id}>
             <ImgBox>
-              <Image src={prof.image} alt={prof.name} fill style={{objectFit:"cover"}}/>
+              <img src={prof.image} alt={prof.name} style={{
+                objectFit: 'cover',
+                width: '100%',
+                height: '100%',
+              }}/>
             </ImgBox>
-            <p>{prof.name}</p>
-            <label>{prof.shortDescription}</label>
-            <br />
-            <Button onClick={() => openModal(prof)}>Ver más</Button>
+            <ProfessionalName>{prof.name}</ProfessionalName>
+            <ProfessionalDescription>{prof.shortDescription}</ProfessionalDescription>
+            <StyledButton onClick={() => openModal(prof)}>Ver más</StyledButton>
           </PhotoBox>
         ))}
       </Row>

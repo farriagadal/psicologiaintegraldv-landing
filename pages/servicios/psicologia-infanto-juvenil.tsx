@@ -7,6 +7,7 @@ export default function ServicePage() {
     <div>
       <MiniHeader
         title='Psicología Infanto-Juvenil'
+        imgUrl='/images/bg-juvenil.jpg'
       />
       <Content>
       <p>En el centro integral del Vínculo ofrecemos un espacio seguro para los niños y adolescentes, en donde el juego con los más pequeños y el dialogo emocional con los más grandes serán factores importantes para comprender las preocupaciones y problemáticas del mundo infanto-juvenil.

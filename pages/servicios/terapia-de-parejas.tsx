@@ -7,6 +7,7 @@ export default function ServicePage() {
     <div>
       <MiniHeader
         title='Terapia de Parejas'
+        imgUrl='/images/bg-2.jpg'
       />
       <Content>
       <p>En el Centro Integral del Vínculo creemos firmemente que una de las dimensiones más difíciles de conversar con un otro es justamente el acto de ser pareja, acto en el cual se gestionan emociones, proyectos, metas, expectativas, acuerdos y desacuerdos. 
