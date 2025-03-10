@@ -45,8 +45,8 @@ const NavDesktop = ({ routes, langs }: NavDesktopProps) => {
       <Container isTop={isTop}>
         <nav>
           <Logo href="/">
-            <Image className='full-logo' src='/images/logo-75-v4.png' alt="Logo" width={200} height={100} />
-            <Image className='short-logo' src='/images/logo-75-v4.png' alt="Logo" width={100} height={50} />
+            <Image className='full-logo' src='/icons/logo/logo-horizontal-black.svg' alt="Logo" width={200} height={100} />
+            <Image className='short-logo' src='/icons/logo/logo-horizontal-black.svg' alt="Logo" width={100} height={50} />
           </Logo>
           {
             routes.map((route, index) => (

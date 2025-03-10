@@ -43,7 +43,7 @@ export const BackButton = styled.div`
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -55,7 +55,7 @@ export const Text = styled.div`
   z-index: 11;
   width: var(--container-width);
   margin: auto;
-  height: 400px;
+  height: 430px;
   place-content: center;
   text-align: center;
   justify-items: center;
