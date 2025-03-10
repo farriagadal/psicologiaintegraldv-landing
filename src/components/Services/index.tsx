@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { useRouter } from 'next/router'
 
 import { Splide, SplideSlide } from '@splidejs/react-splide'
-import '@splidejs/react-splide/css' // Puedes usar el tema por defecto u otro.
+import '@splidejs/react-splide/css'
 
 import CardWork from '../CardWork'
 import { Container } from './styles'

@@ -1,11 +1,9 @@
-import Extract from 'src/components/Extract'
 import FAQS from 'src/components/FAQS'
 import Heading from 'src/components/Heading'
-
-import HowWorks from 'src/components/HowWorks'
-import OurValues from 'src/components/OurValues'
+import Services from 'src/components/Services'
 import Professionals from 'src/components/Professionals'
 import AgendaSection from 'src/components/AgendaSection'
+
 const questions = [
   {
     title: '¿Atienden a través de FONASA?',
@@ -38,7 +36,7 @@ export default function Home() {
       <Heading />
       {/* <Heading2 /> */}
       {/* <Extract /> */}
-      <HowWorks />
+      <Services />
       <FAQS questions={questions} />  
       <Professionals />
       <AgendaSection />
