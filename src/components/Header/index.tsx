@@ -25,10 +25,9 @@ const Header = () => {
 
   const routes = [
     { name: 'Inicio', href: '/' },
-    { name: 'Servicios', href: '/servicios', external: true },
-    { name: 'FAQs', href: '/preguntas-frecuentes', external: true },
+    { name: 'Servicios', href: '/#servicios', external: true },
     { name: 'Sobre Nosotros', href: '/mision-vision', external: true },
-    { name: 'Profesionales', href: '/#profesionales' , external: true }
+    { name: 'FAQs', href: '/preguntas-frecuentes', external: true },
   ]
 
   const langs = [

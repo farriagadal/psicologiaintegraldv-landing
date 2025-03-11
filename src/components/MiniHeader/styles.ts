@@ -9,7 +9,9 @@ export const Container = styled.div`
 
   @media only screen and (max-width: 1250px) {
     flex-direction: column;
-    margin: 100px auto 100px auto;
+    margin-top: 30px;
+    margin-left: -20px;
+    width: calc(100% + 40px);
   }
 
   &:after {

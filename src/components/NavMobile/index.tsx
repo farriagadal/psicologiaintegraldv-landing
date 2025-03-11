@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
 import i18n from 'i18next'
+import { Button } from 'src/styled-components/Button'
 
 type NavMobileProps = {
   routes: {
@@ -43,22 +44,12 @@ const NavMobile = ({ routes }: NavMobileProps) => {
                   : <Link key={index} href={ route.href }>{ route.name }</Link>
               ))
             }
-            <LangBtn onClick={() => {
-              const newLang = isSpanish ? 'en' : 'es'
-              i18n.changeLanguage(newLang)
-              setIsSpanish(!isSpanish)
-            }}>
-              {isSpanish ? (
-                <>{t('lang')} <img src='/images/spain-flag.png' alt="ES Icon" /></>
-              ) : (
-                <>{t('lang')} <img src='/images/en-flag.png' alt="EN Icon" /></>
-              )}
-            </LangBtn>
+
             <a href="https://app.fluai.io">
-              <ContactBtn>
-              <span>Agenda una sessión</span>
+              <Button>
+              <span style={{fontSize: 12, whiteSpace: 'nowrap'}}>Agenda una sessión</span>
               <img src='/icons/whatsapp.svg' alt="Button Main" />
-              </ContactBtn>
+              </Button>
             </a>
 
             <CloseBtn onClick={() => setOpen(false)}>

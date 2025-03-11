@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Container, BtnContact } from './styles'
+import { Container } from './styles'
 import React from 'react'
 
 type ContentProps = {

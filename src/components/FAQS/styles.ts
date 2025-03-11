@@ -28,10 +28,6 @@ export const Container = styled.div`
     text-align: center;
     display: block;
 
-    @media only screen and (max-width: 1250px) {
-      text-align: left;
-    }
-
     &:after {
       content: '';
       left: calc(50vw + 40px);
@@ -57,10 +53,6 @@ export const Container = styled.div`
     letter-spacing: 0.04em;
     max-width: 600px;
     margin: 34px auto 70px auto;
-
-    @media only screen and (max-width: 1250px) {
-      text-align: left;
-    }
 
     &::after {
       content: '.';

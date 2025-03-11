@@ -48,7 +48,7 @@ const ProfessionalDescription = styled.div`
 
 const ModalTitle = styled.h2`
   color: #2c3e50;
-  border-bottom: 2px solid #3498db;
+  border-bottom: 2px solid var(--color-8);
   padding-bottom: 0.8rem;
   margin-bottom: 1.5rem;
   font-size: 1.8rem;

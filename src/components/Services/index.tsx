@@ -6,10 +6,10 @@ import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
 
 import CardService from '../CardService'
-import { Container } from './styles'
+import { Container, SplideContainer } from './styles'
 import { Button } from 'src/styled-components/Button'
 
-const HowWorks = () => {
+const Services = () => {
   const { t } = useTranslation()
   const router = useRouter()
 
@@ -63,7 +63,7 @@ const HowWorks = () => {
       },
       { threshold: 1 }
     )
-    const section = document.querySelector('#howworks')
+    const section = document.querySelector('#Services')
     if (section) observer.observe(section)
 
     // Limpieza del observer en caso de que el componente se desmonte:
@@ -73,24 +73,13 @@ const HowWorks = () => {
   }, [])
 
   return (
-    <div id="howworks" onMouseEnter={() => setIsHover(true)}>
+    <div id="services" onMouseEnter={() => setIsHover(true)}>
       <Container isActive={isShow || isHover}>
         <label>Servicios</label>
         <h2>Nuestros Servicios</h2>
 
         <div style={{ position: 'relative' }}>
-          <div
-            style={{
-              position: 'absolute',
-              top: 0,
-              right: 0,
-              width: '150px',
-              height: '100%',
-              background: 'linear-gradient(to right, transparent, #f5f1e9)',
-              zIndex: 1,
-              pointerEvents: 'none'
-            }}
-          />
+          <SplideContainer />
           <Splide
             options={{
               type: 'loop',
@@ -118,10 +107,9 @@ const HowWorks = () => {
             ))}
           </Splide>
         </div>
-
       </Container>
     </div>
   )
 }
 
-export default HowWorks
+export default Services

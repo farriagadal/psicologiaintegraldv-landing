@@ -80,35 +80,3 @@ export const Container = styled.div`
     }
   }
 `
-export const BtnContact = styled.div`
-  margin-top: 47px;
-  background: var(--color-1);
-  border: 1px solid var(--color-8);
-  border-radius: 20px 0px;
-  width: 214px;
-  height: 58px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  color: var(--color-3);
-
-  &:hover {
-    background: var(--color-8);
-  }
-`
-
-// export const Divider = styled.div`
-//   width: var(--container-width);
-//   margin: auto;
-//   border-bottom: 1px solid var(--color-4);
-
-  
-//   @media only screen and (max-width: 765px) {
-//     width: calc(100% - 40px);
-//   }
-// `

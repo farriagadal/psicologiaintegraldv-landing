@@ -7,6 +7,10 @@ export const Container = styled.div`
   margin-top: 100px;
   padding-bottom: 100px;
 
+  @media only screen and (max-width: 1250px) {
+    width: auto;
+  }
+
   &>label {
     font-family: 'Nunito';
     font-weight: 700;
@@ -17,10 +21,6 @@ export const Container = styled.div`
     color: var(--color-8);
     text-align: center;
     display: block;
-
-    @media only screen and (max-width: 1250px) {
-      text-align: left;
-    }
 
     &:after {
       content: '';
@@ -41,16 +41,14 @@ export const Container = styled.div`
   }
 
 
+
+
   h2  {
     line-height: 100%;
     text-align: center;
     letter-spacing: 0.04em;
     max-width: 700px;
     margin: 34px auto 70px auto;
-
-    @media only screen and (max-width: 1250px) {
-      text-align: left;
-    }
 
     &::after {
       content: '.';

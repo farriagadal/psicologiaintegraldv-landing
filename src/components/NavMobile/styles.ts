@@ -19,7 +19,7 @@ export const MenuButton = styled.button`
   position: fixed;
   bottom: 0px;
   right: 0px;
-  background: var(--color-1);
+  background: var(--color-8);
   border-radius: 16px 0px 0px 0px;
   width: 60px;
   height: 60px;
@@ -34,7 +34,7 @@ export const MenuButton = styled.button`
 `
 
 export const MenuList = styled.div`
-  background: var(--color-1);
+  background: var(--color-8);
   width: 275px;
   position: fixed;
   bottom: 0px;

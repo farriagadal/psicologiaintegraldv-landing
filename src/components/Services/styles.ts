@@ -38,10 +38,6 @@ export const Container = styled.div<ContainerProps>`
     text-align: center;
     display: block;
 
-    @media only screen and (max-width: 1250px) {
-      text-align: left;
-    }
-
     &:after {
       content: '';
       left: calc(50% + 120px);
@@ -69,10 +65,6 @@ export const Container = styled.div<ContainerProps>`
     b {
       font-family: inherit;
       color: var(--color-8);
-    }
-
-    @media only screen and (max-width: 1250px) {
-      text-align: left;
     }
 
     &::after {
@@ -123,3 +115,20 @@ export const List = styled.div<ListProps>`
     transform: translateY(0px);
   }
 `
+
+export const SplideContainer = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #f5f1e9);
+  z-index: 1;
+  pointer-events: none;
+
+  @media only screen and (max-width: 1250px) {
+    width: 50px;
+  }
+`
+
+

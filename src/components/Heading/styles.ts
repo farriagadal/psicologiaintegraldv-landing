@@ -6,12 +6,12 @@ export const Container = styled.div`
   position: relative;
   margin: 60px auto 60px auto;
 
-
   @media only screen and (max-width: 1250px) {
     flex-direction: column;
-    margin: 100px auto 100px auto;
+    margin-top: 30px;
+    margin-left: -20px;
+    width: calc(100% + 40px);
   }
-
 
   label {
     font-weight: 700;
@@ -25,12 +25,6 @@ export const Container = styled.div`
 
   img {
     object-fit: cover;
-
-    @media only screen and (max-width: 1250px) {
-      position: absolute;
-      transform: scale(1.3);
-      opacity: 0.1;
-    }
   }
 
   &:after {
@@ -60,7 +54,7 @@ export const Text = styled.div`
 
   @media only screen and (max-width: 1250px) {
     width: 100%;
-    padding-right: 0px;
+    padding: 20px;
     margin-bottom: 50px;
 
     button {
@@ -68,6 +62,7 @@ export const Text = styled.div`
       margin-top: 30px;
     }
   }
+  
 
   h1 {
     margin: 0;
