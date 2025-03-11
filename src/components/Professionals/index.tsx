@@ -1,6 +1,8 @@
 import React, { useState, useEffect, MouseEvent } from 'react'
 import styled from 'styled-components'
 import Image from 'next/image'
+import { Splide, SplideSlide } from '@splidejs/react-splide'
+import '@splidejs/react-splide/css'
 import { Button } from 'src/styled-components/Button'
 import { CloseButton, Container, ImgBox, ModalContainer, Overlay, PhotoBox, Row } from './styles'
 
@@ -182,22 +184,37 @@ const Professionals: React.FC<ProfessionalsProps> = () => {
     <Container id="profesionales">
       <label>Profesionales</label>
       <h2>Nuestros Psicólogos</h2>
-      <Row>
+      <Splide
+        options={{
+          pagination: true,
+          gap: '1rem',
+          autoplay: true,
+          arrows: false,
+          perPage: 3,
+          breakpoints: {
+            1000: {
+              perPage: 1
+            }
+          }
+        }}
+      >
         {professionalsData.map((prof) => (
-          <PhotoBox key={prof.id}>
-            <ImgBox>
-              <img src={prof.image} alt={prof.name} style={{
-                objectFit: 'cover',
-                width: '100%',
-                height: '100%',
-              }}/>
-            </ImgBox>
-            <ProfessionalName>{prof.name}</ProfessionalName>
-            <ProfessionalDescription>{prof.shortDescription}</ProfessionalDescription>
-            <StyledButton onClick={() => openModal(prof)}>Ver más</StyledButton>
-          </PhotoBox>
+          <SplideSlide key={prof.id}>
+            <PhotoBox>
+              <ImgBox>
+                <img src={prof.image} alt={prof.name} style={{
+                  objectFit: 'cover',
+                  width: '100%',
+                  height: '100%',
+                }}/>
+              </ImgBox>
+              <ProfessionalName>{prof.name}</ProfessionalName>
+              <ProfessionalDescription>{prof.shortDescription}</ProfessionalDescription>
+              <StyledButton onClick={() => openModal(prof)}>Ver más</StyledButton>
+            </PhotoBox>
+          </SplideSlide>
         ))}
-      </Row>
+      </Splide>
 
       {/* Modal único para todos los profesionales */}
       <Modal

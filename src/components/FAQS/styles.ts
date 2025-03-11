@@ -14,6 +14,7 @@ export const Container = styled.div`
     margin-top: 70px;
     opacity: 1;
     transform: translateY(0px);
+    width: auto;
   }
 
 

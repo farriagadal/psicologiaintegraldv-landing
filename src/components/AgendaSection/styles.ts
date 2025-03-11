@@ -6,6 +6,7 @@ export const Container = styled.div`
   margin: auto;
   margin-top: 100px;
   padding-bottom: 100px;
+  overflow-x: hidden;
 
   @media only screen and (max-width: 1250px) {
     width: auto;
@@ -34,13 +35,12 @@ export const Container = styled.div`
       @media only screen and (max-width: 1250px) {
         text-align: left;
         left: initial;
-        width: calc(100vw);
         margin-left: 15px;
+        right: calc(0vw);
+        width: calc(37vw);
       }
     }
   }
-
-
 
 
   h2  {

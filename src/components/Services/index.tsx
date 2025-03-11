@@ -1,18 +1,12 @@
 import { useEffect, useState } from 'react'
-import { useTranslation } from 'react-i18next'
-import { useRouter } from 'next/router'
 
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
 
 import CardService from '../CardService'
 import { Container, SplideContainer } from './styles'
-import { Button } from 'src/styled-components/Button'
 
 const Services = () => {
-  const { t } = useTranslation()
-  const router = useRouter()
-
   const [isShow, setIsShow] = useState(false)
   const [isHover, setIsHover] = useState(false)
 

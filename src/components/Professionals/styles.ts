@@ -5,6 +5,11 @@ export const Container = styled.div`
   width: var(--container-width);
   margin: auto;
   margin-top: 100px;
+  position: relative;
+
+  @media only screen and (max-width: 1250px) {
+    width: auto;
+  }
 
   &>label {
     font-family: 'Nunito';
@@ -55,6 +60,28 @@ export const Container = styled.div`
       margin-bottom: 40px;
     } 
   }
+
+  .splide__list {
+    justify-content: center;
+    @media only screen and (max-width: 1250px) {
+      justify-content: initial;
+    } 
+  }
+
+  .splide__pagination {
+    bottom: -50px;
+  }
+
+  .splide__pagination__page {
+    border-radius: 0;
+    width: 30px;
+    height: 5px;
+    margin: 4px;
+    &.is-active {
+      background-color: var(--color-8);
+      margin: 6px;
+    }
+  }
 `
 
 export const Row = styled.div`
@@ -72,7 +99,7 @@ export const PhotoBox = styled.div`
   border-radius: 20px;
   border: 1px solid #5a7577;
   padding: 29px;
-  width: 385px;
+  // width: 100%;
 
   button {
     margin-top: 1rem;
