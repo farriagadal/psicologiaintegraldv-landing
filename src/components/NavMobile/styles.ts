@@ -26,7 +26,7 @@ export const MenuButton = styled.button`
   z-index: 11;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  box-shadow: rgba(149,157,165,0.2) 0px 8px 24px;
+  box-shadow: rgba(149,157,165,0.5) 0px 8px 15px;
 
   &:hover {
     filter: brightness(0.7);
@@ -45,7 +45,7 @@ export const MenuList = styled.div`
   border-top-left-radius: 20px;
   border: 1px solid var(--color-8);
   animation: 0.2s slideleft linear;
-  box-shadow: rgba(149,157,165,0.2) 0px 8px 24px;
+  box-shadow: rgba(149,157,165,0.5) 0px 8px 15px;
 
   a {
     margin-bottom: 45px;

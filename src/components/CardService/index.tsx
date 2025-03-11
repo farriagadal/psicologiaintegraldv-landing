@@ -2,7 +2,7 @@ import { Button } from 'src/styled-components/Button'
 import { Container, Title, IconContainer } from './styles'
 import { useRouter } from 'next/router'
 
-type CardWorkProps = {
+type CardServiceProps = {
   Icon?: any,
   title: string,
   img?: string,
@@ -11,7 +11,7 @@ type CardWorkProps = {
   url: string
 }
 
-const CardWork = ({ img, Icon, title, description, delay, url }: CardWorkProps) => {
+const CardService = ({ img, Icon, title, description, delay, url }: CardServiceProps) => {
   const router = useRouter()
 
   return (
@@ -30,4 +30,4 @@ const CardWork = ({ img, Icon, title, description, delay, url }: CardWorkProps) 
   )
 }
 
-export default CardWork
+export default CardService

@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
 
-import CardWork from '../CardWork'
+import CardService from '../CardService'
 import { Container } from './styles'
 import { Button } from 'src/styled-components/Button'
 
@@ -113,7 +113,7 @@ const HowWorks = () => {
           >
             {cards.map((card, index) => (
               <SplideSlide key={index}>
-                <CardWork {...card} />
+                <CardService {...card} />
               </SplideSlide>
             ))}
           </Splide>

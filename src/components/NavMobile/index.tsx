@@ -28,7 +28,7 @@ const NavMobile = ({ routes }: NavMobileProps) => {
   return (
     <Container>
       <Logo href="/">
-        <Image src='/icons/logo.svg' alt="Logo" width={170} height={70} />
+        <Image src='/icons/logo/logo-horizontal-black.svg' alt="Logo" width={170} height={70} />
       </Logo>
       <MenuButton onClick={() => setOpen(true)}>
         <Image src='/icons/menu-icon.svg' alt="Centro Psicológico Logo" width={29} height={19} />

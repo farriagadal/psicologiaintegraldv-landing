@@ -10,18 +10,17 @@ import i18n from 'src/i18n/i18n'
 import { useTranslation } from 'react-i18next'
 
 export default function App({ Component, pageProps }: AppProps) {
-  const { t } = useTranslation()
 
   return (
-    <I18nextProvider i18n={i18n}>
+    <>
       <Head>
-        <title>{`FluAI | ${t('head')}`}</title>
-        <meta name="description" content={t('desc') ?? ''} />
+        <title>CAPSI | Centro de Atención Psicológica del Vínculo</title>
+        <meta name="description" content="Acompañamiento profesional para tu desarrollo personal y emocional" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="theme-color" content="#202327" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="apple-mobile-web-app-title" content={`FluAI | ${t('head')}`} />
+        <meta name="apple-mobile-web-app-title" content="CAPSI | Centro de Atención Psicológica del Vínculo" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GTAG_ID}`} />
         <script
@@ -40,6 +39,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </Transition>
       <Footer />
-    </I18nextProvider>
+    </>
   )
 }

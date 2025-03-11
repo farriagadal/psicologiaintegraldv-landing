@@ -76,9 +76,9 @@ export const PhotoBox = styled.div`
   text-align: center;
   margin-bottom: 2rem;
   justify-items: center;
-  padding: 10px;
-  border: solid 1px #ccc;
-  border-radius: 30px;
+  box-shadow: rgba(149,157,165,0.5) 0px 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #5a7577;
   padding: 29px;
   width: 385px;
 

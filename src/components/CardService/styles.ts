@@ -7,7 +7,6 @@ type ContainerProps = {
 export const Container = styled.div<ContainerProps>`
   display: block;
   text-align: center;
-  box-shadow: rgba(149,157,165,0.2) 0px 8px 24px;
   padding: 25px;
   border-radius: 20px;
   /* animation: float 3s infinite; */

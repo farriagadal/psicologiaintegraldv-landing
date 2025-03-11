@@ -66,7 +66,10 @@ export const Logo = styled(Link)`
 
   img {
     width: auto;
-    max-height: 70px;
+    max-height: 66px;
+  }
+  .short-logo {
+    max-height: 42px;
   }
 `
 
