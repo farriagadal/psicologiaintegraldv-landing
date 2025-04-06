@@ -3,12 +3,25 @@ import styled from 'styled-components'
 
 
 export const Container = styled.div`
-  margin-top: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 111;
+  background: #f5f1e9;
+  padding: 5px 20px;
+  border-radius: 0 0 10px 0;
+  box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 15px;
 `
 
 export const Logo = styled(Link)`
   margin-right: auto;
   margin-top: 75px;
+
+
+  img {
+    width: 130px;
+  }
+
 `
 
 export const MenuButton = styled.button`
@@ -17,10 +30,10 @@ export const MenuButton = styled.button`
   border-bottom: none;
   border-right: none;
   position: fixed;
-  bottom: 0px;
+  top: 0px;
   right: 0px;
   background: var(--color-8);
-  border-radius: 16px 0px 0px 0px;
+  border-radius: 0px 0px 0px 16px;
   width: 60px;
   height: 60px;
   z-index: 11;
@@ -37,12 +50,12 @@ export const MenuList = styled.div`
   background: var(--color-8);
   width: 275px;
   position: fixed;
-  bottom: 0px;
+  top: 0px;
   right: 0px;
   z-index: 1111;
   display: grid;
   padding: 73px 30px 35px 40px;
-  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   border: 1px solid var(--color-8);
   animation: 0.2s slideleft linear;
   box-shadow: rgba(149,157,165,0.5) 0px 8px 15px;
@@ -73,7 +86,7 @@ export const CloseBtn = styled.div`
   width: 60px;
   height: 60px;
   position: absolute;
-  bottom: 0px;
+  top: 0px;
   right: 0px;
   display: flex;
   align-items: center;
