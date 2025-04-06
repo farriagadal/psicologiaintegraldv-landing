@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   text-align: center;
-  background-color: #5a7577;
+  background: linear-gradient(134.06deg,#5a7577 22.76%,#716448 97.51%);
   margin-bottom: 30px;
   border-radius: 20px;
   padding: 30px;
