@@ -62,6 +62,7 @@ export const IconContainer = styled.div`
 
   img, svg {
     max-height: 100%;
+    filter: sepia(1) saturate(0.8);
   }
 
   svg, path{
