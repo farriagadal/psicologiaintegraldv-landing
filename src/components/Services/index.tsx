@@ -87,7 +87,8 @@ const Services = () => {
                   perPage: 2
                 },
                 480: {
-                  perPage: 1
+                  perPage: 1,
+                  fixedWidth: '99%'
                 }
               }
             }}

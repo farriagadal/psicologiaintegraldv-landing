@@ -127,7 +127,8 @@ export const SplideContainer = styled.div`
   pointer-events: none;
 
   @media only screen and (max-width: 1250px) {
-    width: 50px;
+    width: 10px;
+    background: transparent;
   }
 `
 

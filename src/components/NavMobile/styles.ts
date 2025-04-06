@@ -17,7 +17,6 @@ export const Logo = styled(Link)`
   margin-right: auto;
   margin-top: 75px;
 
-
   img {
     width: 140px;
   }
