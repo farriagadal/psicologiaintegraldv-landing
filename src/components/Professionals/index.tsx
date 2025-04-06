@@ -193,7 +193,8 @@ const Professionals: React.FC<ProfessionalsProps> = () => {
           perPage: 3,
           breakpoints: {
             1000: {
-              perPage: 1
+              perPage: 1,
+              width: '100%'
             }
           }
         }}

@@ -63,7 +63,7 @@ export const Container = styled.div`
 
   .splide__list {
     justify-content: center;
-    @media only screen and (max-width: 1250px) {
+    @media only screen and (max-width: 550px) {
       justify-content: initial;
     } 
   }
