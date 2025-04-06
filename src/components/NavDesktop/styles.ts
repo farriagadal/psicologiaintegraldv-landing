@@ -6,14 +6,14 @@ type ContainerProps = {
 }
 
 export const Container = styled.div<ContainerProps>`
-  margin-top: 60px;
-  // position: ${props => props.isTop ? 'sticky' : 'fixed'};
-  position: sticky;
+  margin-top: ${props => props.isTop ? '60px' : '0'};
+  position: ${props => props.isTop ? 'sticky' : 'fixed'};
   top: 0;
   z-index: 111;
-  background: ${props => props.isTop ? 'transparent' : 'var(--color-5)'};
+  background: #f5f1e9;
   box-shadow: ${props => props.isTop ? 'none' : 'rgba(149, 157, 165, 0.2) 0px 8px 24px'};
   transition: all 0.2s ease-in-out;
+  width: 100%;
 
   nav {
     align-items: flex-end;

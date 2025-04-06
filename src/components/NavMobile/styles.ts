@@ -19,7 +19,7 @@ export const Logo = styled(Link)`
 
 
   img {
-    width: 130px;
+    width: 140px;
   }
 
 `
