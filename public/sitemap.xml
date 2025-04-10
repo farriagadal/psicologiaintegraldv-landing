@@ -6,7 +6,27 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 <url>
-  <loc>https://fluai.io/sitemap.xml</loc>
+  <loc>https://www.psicologiaintegraldv.com/</loc>
   <lastmod>2023-04-04T20:58:15+00:00</lastmod>
+  <priority>1.0</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.psicologiaintegraldv.com/mision-vision</loc>
+  <lastmod>2023-04-04T20:58:15+00:00</lastmod>
+  <priority>0.8</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://www.psicologiaintegraldv.com/preguntas-frecuentes</loc>
+  <lastmod>2023-04-04T20:58:15+00:00</lastmod>
+  <priority>0.8</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://www.psicologiaintegraldv.com/servicios</loc>
+  <lastmod>2023-04-04T20:58:15+00:00</lastmod>
+  <priority>0.9</priority>
+  <changefreq>monthly</changefreq>
 </url>
 </urlset>

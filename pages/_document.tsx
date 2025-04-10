@@ -1,5 +1,5 @@
 import React from 'react'
-import NextDocument from 'next/document'
+import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
 export default class Document extends NextDocument {
@@ -24,5 +24,22 @@ export default class Document extends NextDocument {
     } finally {
       sheet.seal()
     }
+  }
+
+  render() {
+    return (
+      <Html lang="es">
+        <Head>
+          <meta charSet="UTF-8" />
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <link rel="canonical" href="https://www.psicologiaintegraldv.com/" />
+          <meta name="robots" content="index, follow" />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
   }
 }

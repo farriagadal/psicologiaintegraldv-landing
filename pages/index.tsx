@@ -3,6 +3,7 @@ import Heading from 'src/components/Heading'
 import Services from 'src/components/Services'
 import Professionals from 'src/components/Professionals'
 import AgendaSection from 'src/components/AgendaSection'
+import Head from 'next/head'
 
 const questions = [
   {
@@ -32,15 +33,36 @@ const questions = [
   
 export default function Home() {
   return (
-    <div>
-      <Heading />
-      {/* <Heading2 /> */}
-      {/* <Extract /> */}
-      <Services />
-      <FAQS questions={questions} />  
-      <Professionals />
-      <AgendaSection />
-      <br /><br /><br />
-    </div>
+    <>
+      <Head>
+        <title>CAPSI | Centro de Atención Psicológica del Vínculo - Inicio</title>
+        <meta name="description" content="Centro de atención psicológica especializado en terapia individual, parejas y familiar. Acompañamiento profesional personalizado." />
+      </Head>
+      <main>
+        <section id="inicio" aria-label="Sección principal">
+          <Heading />
+        </section>
+        
+        <section id="servicios" aria-label="Nuestros servicios">
+          <h2 className="visually-hidden">Nuestros Servicios</h2>
+          <Services />
+        </section>
+        
+        <section id="preguntas-frecuentes" aria-label="Preguntas frecuentes">
+          <h2 className="visually-hidden">Preguntas Frecuentes</h2>
+          <FAQS questions={questions} />
+        </section>
+        
+        <section id="profesionales" aria-label="Nuestros profesionales">
+          <h2 className="visually-hidden">Equipo Profesional</h2>
+          <Professionals />
+        </section>
+        
+        <section id="agenda" aria-label="Agenda tu hora">
+          <h2 className="visually-hidden">Agenda tu Hora</h2>
+          <AgendaSection />
+        </section>
+      </main>
+    </>
   )
 }
