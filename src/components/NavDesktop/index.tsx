@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
 import Dropdown from '../Dropdown'
+import { CONSTANTS } from 'src/utils/constants'
 
 type NavDesktopProps = {
   routes: {
@@ -63,10 +64,10 @@ const NavDesktop = ({ routes, langs }: NavDesktopProps) => {
           }
         </nav>
       </Container>
-      <a href="https://app.fluai.io">
+      <a href={CONSTANTS.WZP_URL_REDIRECT}>
         <ContactBtn>
           <img src='/icons/whatsapp.svg' alt="Button Main" />
-          <span>Agenda una sessión</span>
+          <span>Agenda una sesión</span>
         </ContactBtn>
       </a>
     </>

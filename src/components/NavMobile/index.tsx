@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
 import i18n from 'i18next'
 import { Button } from 'src/styled-components/Button'
+import { CONSTANTS } from 'src/utils/constants'
 
 type NavMobileProps = {
   routes: {
@@ -45,9 +46,9 @@ const NavMobile = ({ routes }: NavMobileProps) => {
               ))
             }
 
-            <a href="https://app.fluai.io">
+            <a href={CONSTANTS.WZP_URL_REDIRECT}>
               <Button>
-              <span style={{fontSize: 12, whiteSpace: 'nowrap'}}>Agenda una sessión</span>
+              <span style={{fontSize: 12, whiteSpace: 'nowrap'}}>Agenda una sesión</span>
               <img src='/icons/whatsapp.svg' alt="Button Main" />
               </Button>
             </a>

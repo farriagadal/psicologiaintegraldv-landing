@@ -15,7 +15,7 @@ const AgendaSection = () => {
           height='60px'
           onClick={() => window.open(CONSTANTS.WZP_URL_REDIRECT, '_blank')}
         >
-          <span>Agenda una sessión</span>
+          <span>Agenda una sesión</span>
           <img src='/icons/whatsapp.svg' alt="Button Main" />
         </Button>
       </Row>

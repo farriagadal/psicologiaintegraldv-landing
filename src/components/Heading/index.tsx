@@ -36,15 +36,6 @@ const Heading = () => {
     return () => clearInterval(interval)
   }, [])
 
-  const handleClick = () => {
-    window.gtag('event', 'try_now', {
-      event_category: 'engagement',
-      event_label: `device: ${window.innerWidth} x ${window.innerHeight}`,
-      value: `device: ${window.innerWidth} x ${window.innerHeight}`,
-    })
-    window.location.href = 'https://app.fluai.io'
-  }
-
   return (
     <>
       <Container>
@@ -61,7 +52,7 @@ const Heading = () => {
             height='60px'
             onClick={() => window.open(CONSTANTS.WZP_URL_REDIRECT, '_blank')}
           >
-            <span>Agenda una sessión</span>
+            <span>Agenda una sesión</span>
             <img src='/icons/whatsapp.svg' alt="Button Main" />
           </Button>
         </Text>
