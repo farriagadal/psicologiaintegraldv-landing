@@ -22,7 +22,7 @@ export const Text = styled.div`
   left: 50%;
   transform: translateX(-50%);
   bottom: 40px;
-
+  
   p {
     margin: auto;
     text-align: center;
@@ -30,5 +30,22 @@ export const Text = styled.div`
     font-weight: 100;
     font-family: 'Poppins';
     opacity: 0.9;
+  }
+`
+
+export const Email = styled.div`
+  margin-top: 10px;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Poppins';
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 `
